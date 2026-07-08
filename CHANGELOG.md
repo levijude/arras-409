@@ -1,3 +1,7 @@
+# Jul. 8, 2026 - ???
+
+- Soon...
+
 # Jul. 8, 2025 - Announcement
 
 - Game will be unplayable for potentially quite a while until i find an alternative option for web hosting.
