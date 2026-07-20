@@ -4048,18 +4048,26 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     });
                   }, 6e5)));
                 break;
-              case "S":
-                var d = c[0];
-                c = c[1];
-                d = (Date.now() - P - Q - d) / 2;
-                c = Date.now() - P - Q - d - c;
-                S.push({
-                  delta: c,
-                  latency: d,
-                });
-            if (9 > S.length)                   
-              setTimeout(() => g.talk("S", Date.now() - P - Q), 10),                    
-                (b.message = `Loading game (${10 * S.length}%)`);                
+             case "S":
+                            var d = c[0];
+                            c = c[1];
+                            d = (Date.now() - M - Y - d) / 2;
+                            c = Date.now() - M - Y - d - c;
+                            aa.push({
+                                delta: c,
+                                latency: d
+                            });
+                            if (10 > aa.length) setTimeout(() => g.talk("S", Date.now() - M - Y), 75), b.message = `Loading... ${10*aa.length}%`;
+                            else {
+                                aa.sort((b, a) => b.latency - a.latency);
+                                let a = aa[Math.floor(aa.length / 2)].latency,
+                                    d = Math.sqrt(aa.map(b => b.latency - a).map(b => b * b).reduce((b, a) => b + a, 0) / aa.length);
+                                c = aa.filter(b => Math.abs(b.latency - a) < d).map(b => b.delta);
+                                M = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
+                                b.gameStart = !0;
+                                b.message = "";
+                            }
+                            break;         
             else {                  
               S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
