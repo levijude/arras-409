@@ -4057,8 +4057,8 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                   delta: c,
                   latency: d,
                 });
-                if (9 > S.length)
-                  setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
+                if (10 > S.length)
+                  setTimeout(() => g.talk("S", Date.now() - P - Q), 10),
                     (b.message = `Loading game (${10 * S.length}%)`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
