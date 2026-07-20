@@ -1,26 +1,26 @@
-let gametime = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628");
+let gametime = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628
 let dumbsong = new Audio("");
 let otherdumbshit = new Audio("");
-let funny_guttertank_sound = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/guttertank_spawn_cybergrind.mp3?v=1712198567186");
-let breathing = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/breathing-6091.mp3?v=1710382142616");
-let r7 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/2024-03-16%2012-15-26%20-%20Copy.mp3?v=1710609786194");
-let horrorambience = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/sound-ambience-sonido-ambiente-3-14040.mp3?v=1710806553675");
-let project22 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Project_22.mp3?v=1731120007374");
-let elita = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3?v=1737170312114");
-let endsound = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/My%20Real%20Voice.mp3?v=1737170385301");                                                                                                                                                                              
-let crashout = new Audio('https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/bandicam%202025-01-20%2010-32-12-487.mp3?v=1737391358213');
-let warning27 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/27warning.mp3?v=1737510693963");
-let dontfearthereaper = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/%C3%A5.mp3?v=1737773505697");
-let gamerDie = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/A60KillEffect.mp3?v=1737779345575");
-let sayso = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Say%20so%20(Japanese%20version).mp3?v=1737871581843");
-let killallhumans = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458");
-let chaos = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776");
-let ambience = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303");
-let gemsanctuary = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/gemsanctuary.mp3?v=1741218123992");
-let chaos2 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128");
-let egigaab05 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/E-GIGA%20AB05%20Theme.mp3?v=1741416785188");
-let r7_bp = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Microman%20-%20Rhythm%20Seven%20%5B1995%5D.mp3?v=1741420297196");
-let c14 = new Audio("https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/strxwberrymilk%20-%20My%20Head%20Hurts.mp3?v=1741575165391");
+let funny_guttertank_sound = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/guttertank_spawn_cybergrind.mp3?v=1712198567186
+let breathing = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/breathing-6091.mp3?v=1710382142616
+let r7 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/2024-03-16%2012-15-26%20-%20Copy.mp3?v=1710609786194
+let horrorambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/sound-ambience-sonido-ambiente-3-14040.mp3?v=1710806553675
+let project22 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Project_22.mp3?v=1731120007374
+let elita = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3?v=1737170312114
+let endsound = new Audio("");           //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/My%20Real%20Voice.mp3?v=1737170385301                                                                                                                                                                    
+let crashout = new Audio(''); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/bandicam%202025-01-20%2010-32-12-487.mp3?v=1737391358213
+let warning27 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/27warning.mp3?v=1737510693963
+let dontfearthereaper = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/%C3%A5.mp3?v=1737773505697
+let gamerDie = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/A60KillEffect.mp3?v=1737779345575
+let sayso = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Say%20so%20(Japanese%20version).mp3?v=1737871581843
+let killallhumans = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458"
+let chaos = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776
+let ambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303
+let gemsanctuary = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/gemsanctuary.mp3?v=1741218123992
+let chaos2 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128
+let egigaab05 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/E-GIGA%20AB05%20Theme.mp3?v=1741416785188
+let r7_bp = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Microman%20-%20Rhythm%20Seven%20%5B1995%5D.mp3?v=1741420297196
+let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/strxwberrymilk%20-%20My%20Head%20Hurts.mp3?v=1741575165391
 ~function () {
   "use strict";
   var I = I || {};
