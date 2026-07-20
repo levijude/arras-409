@@ -2924,8 +2924,8 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
       });
       var U = new (w(5))();
       b.mobile && document.body.classList.add("mobile");
-      var g = U.cv.getContext("2d"),
-        Ma = document.createElement("canvas").getContext("2d"),
+      var g = U.cv.getContext('2d', { willReadFrequently: true }),
+        Ma = document.createElement("canvas").getContext('2d', { willReadFrequently: true }),
         S = [],
         P = 0,
         Q = 0,
@@ -4048,26 +4048,34 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     });
                   }, 6e5)));
                 break;
-             case "S":
-                            var d = c[0];
-                            c = c[1];
-                            d = (Date.now() - M - Y - d) / 2;
-                            c = Date.now() - M - Y - d - c;
-                            aa.push({
-                                delta: c,
-                                latency: d
-                            });
-                            if (10 > aa.length) setTimeout(() => g.talk("S", Date.now() - M - Y), 75), b.message = `Loading... ${10*aa.length}%`;
-                            else {
-                                aa.sort((b, a) => b.latency - a.latency);
-                                let a = aa[Math.floor(aa.length / 2)].latency,
-                                    d = Math.sqrt(aa.map(b => b.latency - a).map(b => b * b).reduce((b, a) => b + a, 0) / aa.length);
-                                c = aa.filter(b => Math.abs(b.latency - a) < d).map(b => b.delta);
-                                M = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
-                                b.gameStart = !0;
-                                b.message = "";
-                            }
-                            break;  
+              case "S":
+                var d = c[0];
+                c = c[1];
+                d = (Date.now() - P - Q - d) / 2;
+                c = Date.now() - P - Q - d - c;
+                S.push({
+                  delta: c,
+                  latency: d,
+                });
+            if (10 > S.length)                   
+              setTimeout(() => g.talk("S", Date.now() - P - Q), 10),                    
+                (b.message = `Loading game (${10 * S.length}%)`);                
+            else {                  
+              S.sort((b, a) => b.latency - a.latency);
+                  let a = S[Math.floor(S.length / 2)].latency,
+                    d = Math.sqrt(
+                      S.map((b) => b.latency - a)
+                        .map((b) => b * b)
+                        .reduce((b, a) => b + a, 0) / S.length
+                    );
+                  c = S.filter((b) => Math.abs(b.latency - a) < d).map(
+                    (b) => b.delta
+                  );
+                  P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
+                  b.gameStart = !0;
+                  b.message = "";
+            }
+                break;
               case "m":
                 Y.push({
                   text: c[0].replace(/\x01<([^>]+)>/g, (a, c) => b.help[c]),
@@ -4198,7 +4206,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
       let va = w(7),
         ua = !1;
       const ta = (() => {
-          let b = document.createElement("canvas").getContext("2d");
+          let b = document.createElement("canvas").getContext('2d', { willReadFrequently: true });
           if (b.measureText) {
             if (b.measureText("test").emHeightAscent)
               return (a, c, d = !1) => {
@@ -4285,7 +4293,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             };
           };
           return () => {
-            let a = document.createElement("canvas").getContext("2d");
+            let a = document.createElement("canvas").getContext('2d', { willReadFrequently: true });
             a.imageSmoothingEnabled = !1;
             let c = [b(""), b(0), b(0), b(1), b("#FF0000"), b("left")];
             c.map((b) => b.publish());
@@ -6204,7 +6212,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         a.style.position = "absolute";
         a.style.top = "0";
         document.body.insertBefore(a, document.body.firstChild);
-        let e = a.getContext("2d"),
+        let e = a.getContext('2d', { willReadFrequently: true }),
           c = [],
           g = () => {
             a.width !== window.innerWidth && (a.width = window.innerWidth);
@@ -6249,7 +6257,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         a.style.position = "absolute";
         a.style.top = "0";
         document.body.insertBefore(a, document.body.firstChild);
-        let e = a.getContext("2d"),
+        let e = a.getContext('2d', { willReadFrequently: true }),
           c = [
             [164, 14, 14],
             [230, 80, 0],
