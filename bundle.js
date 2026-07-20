@@ -1711,7 +1711,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
             d = "https:" === location.protocol ? 1 : -1;
-            let a = `${1 === (b.server.secure || d) ? "https" : "http"}://api.github.com/repos/leviajulianna09/409-hellmode/contents/package.json`,
+            let a = `${1 === (b.server.secure || d) ? "https" : "http"}://api.github.com/repos/levijude/giga-test/contents/package.json`,
               c = () =>
                 H.pullJSON(a)
                   .then((b) => {
