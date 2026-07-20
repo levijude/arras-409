@@ -6346,7 +6346,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
       const p = {
         openshift: (a, e) =>
           `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
-        glitch: (a) => `${a}-fqe7u.ondigitalocean.app`,
+        glitch: (a) => `${a}.ondigitalocean.app`,
         heroku: (a) => `${a}.herokuapp.com`,
         arras: (a, e = 5e3) => `ip-${a}.arras.io:${e}`,
         arrasUnknown: (a, e = 5e3) => `ipu-${a}.arras.io:${e}`,
@@ -6586,7 +6586,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             id: "02",
             type: "main",
             code: "glitch-sv-4",
-            at: p.glitch("giga-test"),
+            at: p.glitch("giga-test-fqe7u"),
             prefer: !0,
             // featured: 1, // For Featured Status.
           },
