@@ -4067,23 +4067,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                 b.gameStart = !0;
                                 b.message = "";
                             }
-                            break;         
-            else {                  
-              S.sort((b, a) => b.latency - a.latency);
-                  let a = S[Math.floor(S.length / 2)].latency,
-                    d = Math.sqrt(
-                      S.map((b) => b.latency - a)
-                        .map((b) => b * b)
-                        .reduce((b, a) => b + a, 0) / S.length
-                    );
-                  c = S.filter((b) => Math.abs(b.latency - a) < d).map(
-                    (b) => b.delta
-                  );
-                  P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
-                  b.gameStart = !0;
-                  b.message = "";
-            }
-                break;
+                            break;  
               case "m":
                 Y.push({
                   text: c[0].replace(/\x01<([^>]+)>/g, (a, c) => b.help[c]),
