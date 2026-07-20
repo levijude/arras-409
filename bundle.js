@@ -1414,8 +1414,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
       }
 
       function D(b, n = M[b].color) {
-        let c = M[b];
-        n = c.color == null || c.color === 16 ? arguments[1] : c.color;
+        n = M[b].color == null || M[b].color === 16 ? arguments[1] : M[b].color;
         return {
           time: 0,
           index: b,
