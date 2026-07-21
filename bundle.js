@@ -4048,26 +4048,35 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     });
                   }, 6e5)));
                 break;
-                case "S":
-                            var d = c[0];
-                            c = c[1];
-                            d = (Date.now() - P - Q - d) / 2;
-                            c = Date.now() - P - Q - d - c;
-                            S.push({
-                                delta: c,
-                                latency: d
-                            });
-                            if (10 > S.length) setTimeout(() => g.talk("S", Date.now() - P - Q), 75), b.message = `Loading... ${10*aa.length}%`;
-                            else {
-                                S.sort((b, a) => b.latency - a.latency);
-                                let a = S[Math.floor(S.length / 2)].latency,
-                                    d = Math.sqrt(S.map(b => b.latency - a).map(b => b * b).reduce((b, a) => b + a, 0) / S.length);
-                                c = S.filter(b => Math.abs(b.latency - a) < d).map(b => b.delta);
-                                P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
-                                b.gameStart = !0;
-                                b.message = "";
-                            }
-                            break;
+                 case "S":
+                var d = c[0];
+                c = c[1];
+                d = (Date.now() - P - Q - d) / 2;
+                c = Date.now() - P - Q - d - c;
+                S.push({
+                  delta: c,
+                  latency: d,
+                });
+            if (10 > S.length)                   
+              setTimeout(() => g.talk("S", Date.now() - P - Q), 10),                    
+                (b.message = `Loading game (${10 * S.length}%)`);                
+            else {
+              S.sort((b, a) => b.latency - a.latency);
+                  let a = S[Math.floor(S.length / 2)].latency,
+                    d = Math.sqrt(
+                      S.map((b) => b.latency - a)
+                        .map((b) => b * b)
+                        .reduce((b, a) => b + a, 0) / S.length
+                    );
+                  c = S.filter((b) => Math.abs(b.latency - a) < d).map(
+                    (b) => b.delta
+                  );
+                  P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
+                  b.gameStart = !0;
+                  console.log("dih")
+                  b.message = "";
+            }
+                break;
               case "m":
                 Y.push({
                   text: c[0].replace(/\x01<([^>]+)>/g, (a, c) => b.help[c]),
