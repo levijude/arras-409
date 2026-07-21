@@ -1,11 +1,11 @@
 # Jul. 20, 2026 - Beta 0.00
 
-- THE GAME IS BACK.
+- THE GAME IS RETURNING.
 - It is now being hosted through DigitalOcean, which unfortunately I'll have to pay for.
-- Currently, only War Mode is available to play, but Hell Mode will be restored eventually.
+- Currently, only War Mode will be available to play, but Hell Mode will be restored eventually.
 - The game will be undergoing a massive overhaul in the coming months and will look quite different by the time Beta 1.00 is released.
 - All previous versions have been changed to Alpha as I consider them to be the game's early stages; I have much larger plans for the game now and I don't expect an official release for another couple years.
-- If the server is not working correctly, don't worry, I will get around to fixing it soon.
+- As of today the server is not working correctly, but within the next few days it should hopefully be fixed.
 
 # Jul. 8, 2026 - ???
 
