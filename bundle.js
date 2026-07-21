@@ -4061,7 +4061,6 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               setTimeout(() => g.talk("S", Date.now() - P - Q), 10),                    
                 (b.message = `Loading game (${10 * S.length}%)`);                
             else {
-              console.log("dih")
               S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
                     d = Math.sqrt(
@@ -4074,6 +4073,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                   );
                   P = Math.round(c.reduce((b, a) => b + a, 0) / c.length);
                   b.gameStart = !0;
+                  console.log("dih")
                   b.message = "";
             }
                 break;
