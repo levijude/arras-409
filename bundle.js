@@ -4201,6 +4201,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         white: "#DBDBDB",
         nest: "#DBDBDB",
         guiblack: "#000000",
+        transparent: "rgba( 255, 255, 255, 0 )"
         paletteSize: 10,
         border: 0.65,
       };
@@ -6136,7 +6137,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           c = c[Math.floor(Math.random() * c.length)];
           let g = c[Math.floor(Math.random() * c.length)];
           return () => {
-            F(l.guiblack, 1);
+            F(l.transparent, 1);
             a.draw(
               "Configuring E̷̢̞̬̦̰͓͗̓͋̀̑̿͜͠ͅR̵̦̂̄̽͂R̸̙̬̬̟̝̪͓̗͍̗̻̮̬͊̀̒͋͊̄̆̆̅͊̿̄́̃̽Ǫ̸̧̧̡͙̖̤͙̩̘͔͚̼̬̫̙̂̄̊̈́̋̋͑̾͋̕͘͝R̵̨̢͉̗̲̣̲̘̰̹͍͇͓͉͓̄͛͜...",
               b.screenWidth / 2,
