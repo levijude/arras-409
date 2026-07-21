@@ -4201,7 +4201,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         white: "#DBDBDB",
         nest: "#DBDBDB",
         guiblack: "#000000",
-        transparent: "rgba( 255, 255, 255, 0 )"
+        transparent: "rgba( 255, 255, 255, 0 )",
         paletteSize: 10,
         border: 0.65,
       };
