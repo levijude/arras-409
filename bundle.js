@@ -6137,7 +6137,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           c = c[Math.floor(Math.random() * c.length)];
           let g = c[Math.floor(Math.random() * c.length)];
           return () => {
-            F(l.red, 1);
+            F(l.black, 0);
             a.draw(
               "Configuring E̷̢̞̬̦̰͓͗̓͋̀̑̿͜͠ͅR̵̦̂̄̽͂R̸̙̬̬̟̝̪͓̗͍̗̻̮̬͊̀̒͋͊̄̆̆̅͊̿̄́̃̽Ǫ̸̧̧̡͙̖̤͙̩̘͔͚̼̬̫̙̂̄̊̈́̋̋͑̾͋̕͘͝R̵̨̢͉̗̲̣̲̘̰̹͍͇͓͉͓̄͛͜...",
               b.screenWidth / 2,
